@@ -1518,7 +1518,8 @@ body {
     padding: .8em 1.4em; }
 
 .intro {
-  position: relative; }
+  position: relative;
+  margin-top: 8.5rem; }
   .intro::before {
     content: "";
     display: block;
@@ -1529,6 +1530,10 @@ body {
     top: 0;
     left: 0;
     z-index: 1; }
+  .intro--production {
+    height: 350px;
+    background: url("../images/intro-production.jpg") center no-repeat;
+    background-size: cover; }
   .intro--sertificate {
     height: 350px;
     background: url("../images/intro-sertificate.jpg") center no-repeat;
@@ -1659,6 +1664,12 @@ body {
   font-weight: 700;
   color: #5b86c5; }
 
+.section__text {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #54524f; }
+
 .about {
   font-size: 1.5rem; }
 
@@ -1678,6 +1689,63 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem; }
+
+.services__item {
+  flex-shrink: 1;
+  flex-basis: 25%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  position: relative; }
+  .services__item::before {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 1px;
+    background-color: #d8dee4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+.services__content {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+  color: #54524f;
+  position: relative; }
+  .services__content::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../images/svg/tick.svg") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1; }
+
+.production {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem; }
+
+.production__photo {
+  width: 25rem;
+  height: 25rem;
+  margin-bottom: 2rem; }
+
+.prodaction__img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .sertificate {
   display: flex;
