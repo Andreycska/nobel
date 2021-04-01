@@ -1879,6 +1879,12 @@ body {
     z-index: 1;
 }
 
+.intro--services {
+    height: 350px;
+    background: url("../images/intro-services.jpg") center no-repeat;
+    background-size: cover;
+}
+
 .intro--production {
     height: 350px;
     background: url("../images/intro-production.jpg") center no-repeat;
@@ -2099,6 +2105,89 @@ body {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.acordion {
+    margin: 0 0 4rem;
+}
+
+.acordion__item {
+    border: 1px solid #d8dee4;
+    margin-bottom: 1rem;
+}
+
+.acordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.acordion__item.active .acordion__content {
+    display: block;
+}
+
+.acordion__item.active .acordion__header {
+    border-bottom: 1px solid #d8dee4;
+}
+
+.acordion__item.active .acordion__header::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.acordion__header {
+    padding: 1.5rem 1.5rem 1.5rem 6.5rem;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.acordion__header::after {
+    content: "";
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-top: 2px solid #d8dee4;
+    border-right: 2px solid #d8dee4;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: 1;
+    -webkit-transform: translateY(-50%) rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.acordion__img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.acordion__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #54524f;
+    text-transform: uppercase;
+}
+
+.acordion__subtitle {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #54524f;
+    text-align: center;
+}
+
+.acordion__content {
+    padding: 2rem 2.5rem 3rem;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #54524f;
 }
 
 .services {
